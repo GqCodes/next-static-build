@@ -1,0 +1,83 @@
+.hero2 {
+  width: 100%;
+  height: 100vh;
+  margin-bottom: 50px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  &__collection1 {
+    width: 50%;
+    position: relative;
+    height: 100%;
+  }
+  &__collection2 {
+    width: 50%;
+    position: relative;
+    height: 100%;
+  }
+  &__bg {
+    position: absolute;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+  &__content-container1 {
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-bottom: 10rem;
+    padding-right: 7rem;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: rgba($color: #000000, $alpha: 0.5);
+  }
+  &__content-container2 {
+    position: absolute;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding-bottom: 10rem;
+    padding-left: 7rem;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: rgba($color: #000000, $alpha: 0.5);
+  }
+
+  &__info {
+    text-align: center;
+    color: #ffffff;
+    max-width: 400px;
+  }
+  &__title {
+    font-size: 3rem;
+  }
+  &__paragraph {
+    margin-bottom: 3rem;
+    line-height: 1.2;
+  }
+  &__button {
+    padding: 15px 7em;
+    background-color: transparent;
+    text-decoration: none;
+    color: #000000;
+    font-weight: 500;
+    border: 3px solid #fff;
+    color: #fff;
+    font-size: 0.8rem;
+    transition: all 0.4s ease-in-out;
+
+    &:hover {
+      background: #fff;
+      color: #000;
+    }
+  }
+}

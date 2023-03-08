@@ -1,0 +1,23 @@
+@use './reset.scss';
+@use '../components/components.scss';
+@use './bootstrap/scss/bootstrap.scss';
+
+body {
+  background-color: #f7f9fd;
+}
+
+.fixed-nav {
+  &.nav-transparent {
+    .header {
+      background: transparent;
+      a {
+        color: #e1e2e7;
+      }
+    }
+  }
+  .header {
+    position: fixed;
+    width: 100%;
+    z-index: 20;
+  }
+}
